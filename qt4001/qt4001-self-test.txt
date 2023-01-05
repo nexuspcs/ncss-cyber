@@ -1,0 +1,10 @@
+//qt 4001 testing
+2
+3
+4
+3
+
+// yeilds a result of:
+// IP;; 5
+// IS;; 0
+// R;;  2
