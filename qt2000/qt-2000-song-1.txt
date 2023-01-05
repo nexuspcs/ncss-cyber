@@ -1,0 +1,11 @@
+// this tune is the 'super mario theme'
+5 5 5 
+1 5 8 8 
+
+1 8 5 
+10 12 12 10 
+8 5
+// end due to the 16-byte limit of the qt2000 microprocessor
+
+// also, here is the link to access the microprocessor emulator
+https://media.openlearning.com/PYCGYFmxcBN6Gk6vZMB3PEomkK7Y2dsSzmYvgyqcF6VovZTeeEQwtRbafUW6kYxp.1672636031/QT2000/index.html?
