@@ -1,5 +1,5 @@
 // Simple program to print a knock knock joke
-// 1 Jan 2023 Richard and Brendan
+// 5 jan 2023 james coates
 #include <stdlib.h>
 #include <stdio.h>
 

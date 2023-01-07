@@ -1,0 +1,46 @@
+// james coates 6 jan 2023 ncss
+
+// a simple c program to give an output using functions...
+
+#include <stdlib.h>
+#include <stdio.h>
+#define ONE 1 //set the word 'ONE' to the numeric value of '1', avoics confusion
+// definitions above
+
+
+// define the add and the twice functions below::
+int add (int x, int y);
+int twice (int x, int y);
+//
+
+
+int main (int arc, char** argv) {
+
+    int answer = 0;
+    int num1, num2;
+
+    num1 = add (ONE, ONE);
+    num2 = twice (ONE, num1);
+   
+    answer = twice (num2, 1);
+
+    printf ("answer is %d\n", answer);
+    return EXIT_SUCCESS;
+}
+
+int add (int x, int y) {
+    int answer;
+
+    printf ("# "); // this is to simple help you keep track of how many times the function had to be called
+
+    answer = x + y;
+    return answer;
+    }
+
+int twice (int x, int y) {
+    int answer;
+    printf ("# ");
+    answer = x + x;
+    return answer;
+    }
+
