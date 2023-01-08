@@ -1,0 +1,21 @@
+Housekeeping - calling a function in 8007
+
+main does these steps ...
+
+// 1. save registers - push them onto the stack
+// 2. pass arguments - push them onto the stack
+// 3. jump (and save return address)
+
+then the callee function does these steps ...
+
+// 4. set the new FP
+// 5. set aside local memory for function's variables
+// 6. do the function 
+// 7. put the return value into R0
+// 8. free up any local memory allocated
+// 9. jump back to return address 
+
+then main tidies up
+
+// 11. remove the arguments from the stack
+// 12. restore saved registers (in reverse order)
