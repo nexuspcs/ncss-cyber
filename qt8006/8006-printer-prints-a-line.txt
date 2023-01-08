@@ -1,0 +1,123 @@
+// printer function and program for the qt8006
+
+// main goes from 0x00 (0)   -- frame 0xC0 (192) - 0xDF
+// triple         0x30 (48)  -- frame 0xE0 (224) - 0xE7
+// isEven         0x50 (80)  -- frame 0xE8 (232) - 0xEF
+// half           0x70 (112) -- frame 0xF0 (240 )- 0xF8
+// input to main stored at FF (255)
+
+// 0x00
+
+A 5    // load 5 into r0
+C e0   // save r0 into the data frame for triple
+8 30 9 30  // jumpt to the start of triple
+7 10 0 0
+0 0 0 0 
+
+// 0x10
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0x20 
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0x30
+
+A 0 f e0 // load in x to r1
+5 5 5 // triple x into r0
+ f e0   // restore r1 to old value
+8 8 9 8 0 // jump back to kansas
+0 0  
+
+// 0x40
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0x50
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0x60 
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0x70
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0x80
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0x90
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0xA0 
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0xB0
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0xC0
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0xD0
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0xE0 
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0xF0
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+
