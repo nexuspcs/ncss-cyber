@@ -1,0 +1,35 @@
+// print our the numbers 0 .... X
+// will need to store the v
+11
+Alues of X in the cells 15 or 16 (y in 15, x in 16)
+
+E E // sw
+11
+Aps the v
+11
+Alue of from reg0 to cell E (no. 15)
+F F // sw
+11
+Aps the v
+11
+Alue of from reg1 to cell F (no. 16)
+
+7 // displ
+11
+Ay 0 bfore everything else
+
+1
+7
+C E 
+6
+
+8 3 // jump to 
+11
+Address 3  if r0 is not equ
+11
+Al to 0 
+
+7 
+0
+
+

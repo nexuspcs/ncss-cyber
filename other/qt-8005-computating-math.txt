@@ -1,0 +1,136 @@
+// Wonderous 8005
+
+// main goes from 0x00 (0)   -- frame 0xC0 (192) - 0xDF
+// triple         0x30 (48)  -- frame 0xE0 (224) - 0xE7 *DONE*
+// isEven         0x50 (80)  -- frame 0xE8 (232) - 0xEF *IN PROGRESS* 
+// half           0x70 (112) -- frame 0xF0 (240)- 0xF8  *IN PROGRESS* *doing*
+// input to main stored at FF (255)
+
+// 0x00
+
+A 6    // load '6' into r0
+B 3
+C f0   // save r0 into the data frame for half
+8 32 9 32  // jumpt to the start of halfing
+7 10 0 0
+0 0 0 0 
+
+// 0x10
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0x20 
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0x30
+
+0 0 0 0 //B 3 f e0 // load in x to r1 (x=3 which is half of 6)
+5 f f0    // triple x into r0 // restore r1 to old value
+8 8 9 8 0 // jump back to kansas
+0 0 0 0
+
+
+//A 0 f e0 // load in x to r1
+//5 5 5 // triple x into r0
+//f e0   // restore r1 to old value
+//8 8 9 8 0 // jump back to kansas
+//0 0  
+
+// 0x40
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0x50
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0x60 
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+
+
+// 0x70 **HALFing anumber funciton**
+
+//0 0 0 0
+//6 0 0 0
+//0 0 0 0
+//0 0 0 0 
+
+
+
+
+
+// 0x80
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0x90
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0xA0 
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0xB0
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0xC0
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0xD0
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0xE0 
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+// 0xF0
+
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+
+

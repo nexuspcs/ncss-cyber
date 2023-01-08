@@ -1,0 +1,28 @@
+// print the mess
+11
+Age "hello world" using Leet
+1 1 1 // set the v
+11
+Alue of regiser to 3 
+8 // print the v
+11
+Alue of '3' to the displ
+11
+Ay 
+
+//
+
+4 
+3 
+2
+8
+
+4
+3
+2
+1
+1
+
+8
+
+
