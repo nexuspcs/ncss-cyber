@@ -23,12 +23,15 @@ A 4 // load 4 into r0
 1D  // push r0
 A 6 
 1D
+  // push r0
+A 9
+1D
 
 // 3. jump (and save return address)
 28 20 // CALL
 
 // 11. remove the arguments from the stack
-26 3   // SP=SP+3
+26 4   // SP=SP+3
 
 // 12. restore saved registers (in reverse order)
 23     // POP FP
