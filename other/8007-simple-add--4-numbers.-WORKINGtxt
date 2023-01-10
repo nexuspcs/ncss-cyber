@@ -1,0 +1,78 @@
+// 8007 - add 3.  
+// call a function add (x,y,z) which returns 
+// x+y+z
+ 
+// the address of add is 0x30 (48)  
+
+// do a test
+// load a test value into R1
+// the print function should not alter this
+B 42 
+
+// let's do it!  call add(6,4,3)
+
+// 1. save registers
+1E  // push R1
+1F  // push FP
+
+// 2. pass arguments
+// push 3, 4 and 6 into the stack
+A 3 // load 3 into r0
+1D  // push r0
+A 4 // load 4 into r0
+1D  // push r0
+A 6 
+1D
+A 7 
+1D
+
+
+// 3. jump (and save return address)
+28 20 // CALL
+
+// 11. remove the arguments from the stack
+26 4   // SP=SP+4
+
+// 12. restore saved registers (in reverse order)
+23     // POP FP
+22     // POP R1
+
+7 10   // print the sum (and beep)!
+
+// check R1 was not altered
+A 0  // R0 = 0
+5 7  // R1 -> R0, print R0
+
+0 // HALT 
+
+// empty space between main and add
+0 0 0  
+
+// 0x20 : ADD starts here
+
+// 4. set the new FP
+25  // SP->FP
+
+// 5. set aside local memory for functions variables
+// there are no local variables in this function 
+
+// 6. do the function 
+
+// compute x+y+z
+15 2  // load x into R0, is at FP+2
+16 3  // load y into R1, is at FP+3
+5     // add   
+16 4  // load z into R1, is at FP+4
+5     // add
+16 5  // load y into R1, is at FP+4
+5     // add
+
+
+// 7. put the return value into R0
+// it already is there, nothing to do :)
+
+// 8. free up any local memory allocated
+// no local variables nothing to do
+
+// 9. jump back to return address 
+29   // RETURN
