@@ -6,7 +6,7 @@ This repo is simply a store for me to upload code and resources from the LAB com
 
 ![NCSS Logo](readme-resources/imgs/ncss-logo.png)
 
-If you are interested in learning more, feel free to contact me using my [personal email](mailto:jamescoates06@gmail.com) or by using one of my [business accounts](mailto:james@windcloud.com.au)
+If you are interested in learning more, feel free to contact me using my [personal email](mailto:jamescoates06@gmail.com) or by using one of my [business accounts](mailto:james@portfoliopro.au)
 *** 
 
 **Please note:** All files located within this repository are owned by James Coates, and any unauthorsed use of this repository is **strictly** prohibited. 
